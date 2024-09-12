@@ -63,13 +63,13 @@ function Header({
   }, [query]);
 
   return (
-    <div className="flex justify-between items-center p-6 text-text-primary">
-      <div className="flex items-center space-x-3">
-        <img src="/logo.png" alt="logo" className="w-8 h-8" />
-        <h1 className="text-xl">Weathery</h1>
+    <div className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6 text-text-primary">
+      <div className="flex items-center space-x-3 mb-4 md:mb-0">
+        <img src="/logo.png" alt="logo" className="w-6 md:w-8 h-6 md:h-8" />
+        <h1 className="text-lg md:text-xl">Weathery</h1>
       </div>
 
-      <div className="relative w-1/3 md:2/3">
+      <div className="relative w-full md:w-1/3">
         <input
           ref={inputRef}
           type="text"
